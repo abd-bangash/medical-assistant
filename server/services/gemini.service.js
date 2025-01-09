@@ -4,7 +4,7 @@ const apiKey = "AIzaSyB1fNLj8Zr1K75_Xbr-Z1OqwN62PA92sj4";
 async function generateInsights(prompt) {
   try {
     const response = await axios.post(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyB1fNLj8Zr1K75_Xbr-Z1OqwN62PA92sj4`,
       {
         contents: [{ parts: [{ text: prompt }] }],
       }
